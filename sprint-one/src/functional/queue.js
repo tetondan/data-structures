@@ -24,9 +24,8 @@ var Queue = function() {
     if(age >= 0){
       for(var key in storage){
         if(storage[key] === age){
-          var tempVal = key
           delete storage[key]
-          return tempVal;
+          return key;
         }
       }
     }

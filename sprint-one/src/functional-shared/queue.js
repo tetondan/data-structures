@@ -22,6 +22,12 @@ var queueMethods = {
   
   dequeue: function(){
     this.age--;
+    for(var key in this.objects){
+      if(this.objects[key] === this.age){
+        delete this.objects[key];
+        return key;
+      }
+    }
 
   },
 
