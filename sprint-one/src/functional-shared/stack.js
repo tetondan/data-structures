@@ -12,7 +12,6 @@ var stackMethods = {
   
   push: function(value){
     this[this.length] = value;
-    debugger;
     this.length++;
   },
 
